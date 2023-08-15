@@ -1,0 +1,34 @@
+.bgimg{
+    background-image: url('maharashtra.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 660px;
+}
+.hearderset{
+          padding-top: 200px;
+          box-sizing: border-box; 
+}
+.hearderset h3{
+              font-size: 42px; background-color: white;
+}	         
+.hearderset h1{
+               font-size: 52px;
+               font-weight: bold;background-color: white;
+}
+.footer{
+    height: 10px;
+}
+.footer h6{
+         line-height: 50px;
+}
+
+@media(max-width: 479px){
+    .hearderset h3{
+     font-size: 32px; background-color: white;
+    }           
+    .hearderset h1{
+      font-size: 42px;
+      font-weight: bold;background-color: white;
+    }
+}
