@@ -1,0 +1,15 @@
+
+.ourteam{
+	height: 700px;
+	padding: 100px 0px 60px;
+	width: 100%
+}
+
+.ourteam h1{
+       font-size: 50px;
+       font-weight: bold;
+}
+
+.teamsetting{
+	margin-top: 70px !important;
+}
