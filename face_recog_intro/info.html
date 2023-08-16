@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" type="text/css" href="css/info.css">
+  
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta  name="viewport" content="width-device-width, initial-scale-1">
+</head>
+<body>
+ 
+   <div >
+     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <div class="container">
+        <a href="" class="navbar-brand text-warning font-weight-bold">Py_Recog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-warning">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a href="error.html" class="nav-link text-warning">ERROR</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link text-warning"></a>
+            </li>
+            <li class="nav-item">
+              <a href="uses.html" class="nav-link text-warning">USES</a>
+            </li>
+            <li class="nav-item">
+              <a href="team.html" class="nav-link text-warning">TEAM</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link text-warning">CONTACT</a>
+            </li>
+
+                  </ul>
+               </div>
+             </div>
+           </nav>
+        </div>
+  
+    <section class="info bg-ligh">
+              <div class="container text-center">
+                <h1 class="recog text-center"> How to Use Face_Recognition Library</h1>
+                   <div class="card">
+                     <img src="face1.jpg" class="img card-img-fluid">
+                     <div class="card-body">
+                      <h2 class="card-title text-center">Find Faces In Picture</h2>
+                       <p class="containent text-left">
+                         import face_recognition<br>
+                        image = face_recognition.load_image_file("your_file.jpg")<br>
+                         face_locations = face_recognition.face_locations(image)
+                       </p>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="face2.jpg" class="img card-img-fluid">
+                     <div class="card-body">
+                      <h2 class="card-title text-center">Find And Manipulate Facial Features In Pictures</h2>
+                       <p class="containent text-left">
+                        import face_recognition<br>
+                           image = face_recognition.load_image_file("your_file.jpg")<br>
+                            face_landmarks_list = face_recognition.face_landmarks(image)
+                       </p>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="face3.jpg" class="img card-img-fluid">
+                     <div class="card-body">
+                      <h2 class="card-title text-center">Identify Faces In Pictures</h2>
+                       <p class="containent text-left">
+                         import face_recognition<br>
+                          known_image = face_recognition.load_image_file("biden.jpg")<br>
+                          unknown_image = face_recognition.load_image_file("unknown.jpg")<br>
+
+                          biden_encoding = face_recognition.face_encodings(known_image)[0]<br>
+                           unknown_encoding = face_recognition.face_encodings(unknown_image)[0]<br>
+
+                            results = face_recognition.compare_faces([biden_encoding], unknown_encoding)
+                       </p>
+                     </div>
+                   </div>
+
+                   <div class="card">
+                     <img src="face4.jpg" class="img card-img-fluid">
+                     <div class="card-body">
+                      <h2 class="card-title text-center">Automatically Locate The Facial Features Of a Person In An Image</h2>
+                       <p class="containent text-left">
+                         import face_recognition<br>
+
+                        image = face_recognition.load_image_file("my_picture.jpg")<br>
+                        face_landmarks_list = face_recognition.face_landmarks(image)<br>
+
+                        # face_landmarks_list is now an array with the locations of each facial feature in each face.
+                        <br>
+                        # face_landmarks_list[0]['left_eye'] would be the location and outline of the first person's left eye.
+                       </p>
+                     </div>
+                   </div>
+
+              </div>
+
+
+    </section>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
